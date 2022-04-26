@@ -1,0 +1,123 @@
+/* Header styles */
+.imagebackground {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.mask {
+    background-image: url(../assets/Imageheaderside.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background: linear-gradient(rgba(0, 0, 0, .5));
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    text-align: center;
+    display: block;
+}
+.imagebackground .content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+}
+
+.imagebackground .content h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.imagebackground p {
+    font-size: 1.8ren;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    color: white;
+}
+
+.btn {
+    width: 40vh;
+    border-radius: 20px;
+    border: transparent;
+    padding: 15px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6aa6ef;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+/* landing page content styles */
+
+.display {
+    display: flex;
+    align-items: center;
+    text-align: center;
+   justify-content: space-around;
+   padding: 5rem 0;
+   background-color: aliceblue;
+}
+.display-text {
+    width: 500px;
+    padding: 0 2rem;
+    border-radius: 10px;
+    background-color: rgb(249, 206, 206);
+}
+.display-text p {
+    color: black;
+}
+.img-pricing {
+    border-radius: 10px;
+}
+/* image section styles */
+.img-section {
+    padding: 5rem 0;
+    background-color: beige;
+}
+.flex-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+.landing-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    text-align: center;
+}
+.details-content { 
+    width: 500px;
+    padding: 0 2rem;
+    border-radius: 10px;
+    padding-top: 3rem;
+    background-color: white;
+}
+.details-content p {
+    color: black;
+}
+
+@media screen and (max-width: 950px) {
+    .imagebackground .content h1 {
+        font-size: 2rem;
+    }
+    .display, .flex-img, .landing-details {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .display-responsive {
+        width: 100%;
+        margin: 2rem 0;
+    }
+}

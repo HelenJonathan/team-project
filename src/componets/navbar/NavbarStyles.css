@@ -1,0 +1,160 @@
+/*==================== the footer and that navebar are sharing the same style folder ========================*/
+
+/*========================= Navbar styles =============================*/
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    z-index: 30;
+    background-color: transparent;
+}
+
+.logo {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 15px 0;
+    color: white;
+}
+
+.btn-contain ul {
+    display: flex;
+}
+
+.nav-menu a:hover {
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.btnSign {
+    width: 100px;
+    border-radius: 15px;
+    border: transparent;
+    font-size: 1.2rem;
+    padding: 10px; 
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(247, 160, 160, 0.386);
+    cursor: pointer;
+}
+
+.btnSign:hover {
+    background-color: black;
+}
+.btn-contain .btnSignin {
+    margin: 0 20px ;
+}
+.icons-footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        text-align: center;
+        padding-top: 3rem;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        z-index: -1;
+        background: rgba(0, 0, 0, .7);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: 1rem 0;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
+    .btn-contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    .btn-contain .btnSign {
+        width: 45vh;
+    }
+
+    /*====================== footer media query ===================== */
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: left;
+        flex-wrap: wrap;
+        padding: 2rem;
+    }
+    .logo-bottom {
+        display: none;
+    }
+  
+}
+
+/*============================ Footer styles ================================*/
+footer {
+    padding: 3rem 0;
+    background-color: rgba(255, 71, 71, 0.386);
+    color: black;
+}
+.footer-container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.logo-footer {
+    width: 400px;
+    padding: 0 2rem;
+}
+.logo-footer p {
+    padding: 2rem 0;
+}
+.company Link {
+    color: black;
+}
+.btn-footer {
+    max-width: 200px;
+}
